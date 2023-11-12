@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="time_info_box">
+        <div class="input_main_box">
+          <div class="input_box">
+            <input type="text" id="day" placeholder="DD" required />
+            <label for="text">Day</label>
+          </div>
+        </div>
+        <div class="input_main_box">
+          <div class="input_box">
+            <input type="text" id="month" placeholder="MM" required/>
+            <label for="text">MOnth</label>
+          </div>
+        </div>
+        <div class="input_main_box">
+          <div class="input_box">
+            <input type="text" id="year" placeholder="YY" required/>
+            <label for="text">Year</label>
+          </div>
+        </div>
+      </div>
+      <div class="button_box">
+        <button type="button" id="btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="44"
+            viewBox="0 0 46 44"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <div class="result_box">
+        <div class="year_result">
+          <h1><span id="year_res">--</span> years</h1>
+        </div>
+        <div class="month_result">
+          <h1><span id="month_res">--</span> months</h1>
+        </div>
+        <div class="day_result">
+          <h1><span id="day_res">--</span> days</h1>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

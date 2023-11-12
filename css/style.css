@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  width: 1440px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  width: 840px;
+  padding: 56px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 24px 24px 200px 24px;
+  background-color: #fff;
+}
+.time_info_box {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+.input_main_box {
+  max-width: 160px;
+}
+.input_main_box .input_box {
+  position: relative;
+}
+.input_box {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+  gap: 8px;
+  position: relative;
+}
+.input_box input {
+  padding: 12px 24px;
+  color: #151515;
+  width: 160px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  font-size: 32px;
+  font-weight: 700;
+  outline: none;
+  letter-spacing: 0.32px;
+}
+.input_box label {
+  color: #716f6f;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+.button_box {
+  align-self: flex-end;
+}
+.button_box button {
+  display: flex;
+  width: 96px;
+  height: 96px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 216px;
+  background: #854dff;
+  border: none;
+  cursor: pointer;
+  transition: 0.15s ease;
+  outline: none;
+}
+.button_box button:hover {
+  background-color: #151515;
+}
+.button_box button:active {
+  opacity: 0.9;
+}
+.button_box::after {
+  height: 1px;
+  content: "";
+  width: 90%;
+}
+.result_box {
+  display: flex;
+  flex-direction: column;
+}
+.result_box h1 {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  color: #151515;
+
+  font-size: 104px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 110%; /* 114.4px */
+  letter-spacing: -2.08px;
+}
+h1 span {
+  color: #854dff;
+}
