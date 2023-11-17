@@ -36,19 +36,43 @@
       <div class="time_info_box">
         <div class="input_main_box">
           <div class="input_box">
-            <input type="text" id="day" placeholder="DD" required />
+            <input
+              type="text"
+              id="day"
+              placeholder="DD"
+              required
+              onkeydown="
+                 if(event.key ==='Enter') calcDateTillNow();
+                "
+            />
             <label for="text">Day</label>
           </div>
         </div>
         <div class="input_main_box">
           <div class="input_box">
-            <input type="text" id="month" placeholder="MM" required/>
+            <input
+              type="text"
+              id="month"
+              placeholder="MM"
+              required
+              onkeydown="
+                 if(event.key ==='Enter') calcDateTillNow();
+                "
+            />
             <label for="text">MOnth</label>
           </div>
         </div>
         <div class="input_main_box">
           <div class="input_box">
-            <input type="text" id="year" placeholder="YY" required/>
+            <input
+              type="text"
+              id="year"
+              placeholder="YY"
+              required
+              onkeydown="
+                 if(event.key ==='Enter') calcDateTillNow();
+                "
+            />
             <label for="text">Year</label>
           </div>
         </div>
@@ -56,12 +80,26 @@
       <div class="button_box">
         <button type="button" id="btn">
           <svg
+            class="svg_1"
             xmlns="http://www.w3.org/2000/svg"
             width="46"
             height="44"
             viewBox="0 0 46 44"
           >
             <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+          <svg
+            class="svg_2"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 46 44"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="4">
               <path
                 d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
               />
