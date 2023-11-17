@@ -43,9 +43,11 @@ function calcDateTillNow() {
   let monthResult = CurrentMonth - addedMonth;
   let dateResult = CurrentDate - AddedDate;
 
-  if (monthResult <= 0) {
+  if (monthResult < 0) {
     monthResult = CurrentMonth + 12 - addedMonth;
     yearResult--;
+  } else if (monthResult == 0) {
+    yearResult;
   }
 
   if (dateResult < 0) {
@@ -70,6 +72,11 @@ function calcDateTillNow() {
       monthResult == 11
     ) {
       dateResult = 30 + CurrentDate - AddedDate;
+      monthResult--;
+    } else if (monthResult == 0) {
+      monthResult = 12;
+      yearResult--;
+      dateResult = 31 + CurrentDate - AddedDate;
       monthResult--;
     }
   }
