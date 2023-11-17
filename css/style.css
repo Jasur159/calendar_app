@@ -178,18 +178,26 @@ h1 span {
     letter-spacing: 3px;
   }
   .result_box h1 {
-    font-size: 56px;
+    font-size: 76px;
     line-height: 110%; /* 61.6px */
     letter-spacing: -1.12px;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 520px) {
   .month_result h1 {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .result_box h1 {
     font-size: 45px;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 335px){
   .result_box h1 {
     font-size: 40px;
+  }
+  .input_box input{
+    font-size: 15px;
   }
 }
