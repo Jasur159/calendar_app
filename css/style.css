@@ -141,6 +141,12 @@ h1 span {
   }
 }
 @media screen and (max-width: 650px) {
+  body {
+    padding: 20px 0 0;
+  }
+  .wrapper{
+    height: 100vh;
+  }
   .svg_1 {
     display: none;
   }
@@ -193,11 +199,11 @@ h1 span {
     font-size: 45px;
   }
 }
-@media screen and (max-width: 335px){
+@media screen and (max-width: 335px) {
   .result_box h1 {
     font-size: 40px;
   }
-  .input_box input{
+  .input_box input {
     font-size: 15px;
   }
 }
