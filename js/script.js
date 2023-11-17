@@ -26,22 +26,24 @@ function calcDateTillNow() {
   }
   if (addedYear < 0) {
     alert("Bunday yil mavjud emas !!!!");
-  } else if (addedYear > 2024) {
+  } else if (addedYear >= 2024) {
     alert("Bu yil hali kelgani yoq");
     return;
   }
-  if (addedMonth < 0 && addedMonth > 13) {
-    console.log("BUnday oy mavjud emas");
+  if (AddedDate < 0 || AddedDate >= 32) {
+    alert("Unday oy kuni mavjud emas");
     return;
   }
-  if (AddedDate < 0 && AddedDate > 32) {
-    console.log("BUnday oy kuni mavjud emas");
+  if (addedMonth < 0 || addedMonth > 12) {
+    alert("Bunday oy mavjud emas");
+    return;
   }
+
   let yearResult = CurrentYear - addedYear;
   let monthResult = CurrentMonth - addedMonth;
   let dateResult = CurrentDate - AddedDate;
 
-  if (monthResult < 0) {
+  if (monthResult <= 0) {
     monthResult = CurrentMonth + 12 - addedMonth;
     yearResult--;
   }
